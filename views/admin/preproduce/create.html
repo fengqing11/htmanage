@@ -1,0 +1,17 @@
+{extend name="public:form" /}
+{block name="menu"}生产资料单 / 新建资料单{/block}
+{block name='action'}{:url('user/create')}{/block}
+{block name="form"}
+
+<div class="tab-head">
+	<h2 id="tab1" onmouseover="changeTab1()" class="selected">1</h2>
+	<h2 id="tab2" onmouseover="changeTab2()">2</h2>
+	<h2 id="tab3" onmouseover="changeTab3()">3</h2>
+</div>
+<div class="tab-content">
+	<div id="c1" class="show">content1</div>
+	<div id="c2">content2</div>
+	<div id="c3">content3</div>
+</div>
+
+{/block}

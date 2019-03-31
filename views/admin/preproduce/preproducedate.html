@@ -1,0 +1,101 @@
+{extend name="public:base" /}
+{block name="menu"}生产资料单{/block}
+{block name="search"}
+<div class="form-group">
+	<label for="name" class="sr-only">用户名</label>
+	<input type="text" name="name" placeholder="请输入用户名" id="name" class="form-control" value="{$Request.param.name}">
+</div>
+<div class="form-group">
+	<label for="email" class="sr-only">邮箱</label>
+	<input type="text" name="email" placeholder="请输入邮箱" id="email" class="form-control" value="{$Request.param.email}">
+</div>
+{:searchButton()}
+{/block}
+{block name="button-create"}
+{:createButton(url('preproduce/create'), '新建资料单')}
+{/block}
+{block name="table-head"}
+<tr>
+	<th>操作</th>
+	<th>生产资料单单号</th>
+	<th>企划单号</th>
+	<th>进度备注</th>
+	<th>加工模式</th>
+	<th>设计款号</th>
+	<th>产品图片</th>
+	<th>制单日期</th>
+	<th>品牌</th>
+	<th>大货款号</th>
+	<th>洗水类别</th>
+	<th>首单制单号</th>
+	<th>款式名称</th>
+	<th>要求出货日期</th>
+	<th>生产部门</th>
+	<th>生产品类</th>
+	<th>审样师</th>
+	<th>编号</th>
+	<th>审核日期</th>
+	<th>纸样系数</th>
+	<th>查版师</th>
+	<th>查版审核日期</th>
+	<th>工作分配日期</th>
+	<th>推版师</th>
+	<th>推版师审核日期</th>
+	<th>审版师</th>
+	<th>审版审核日期</th>
+	<th>唛架师</th>
+	<th>唛架审核日期</th>
+	<th>样衣审核时间</th>
+	<th>工艺师</th>
+	<th>克重</th>
+	<th>企业要求上架日期</th>
+	<th>跟单员</th>
+	<th>收跟单员资料日期</th>
+	<th>下单备注</th>
+	<th>工艺类型</th>
+</tr>
+{/block}
+{block name="table-body"}
+    <tr>
+    	<td>导出</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    	<td>asda</td>
+    </tr>
+{/block}
+{block name="paginate"}
+  
+{/block}
